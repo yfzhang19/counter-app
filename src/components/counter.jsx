@@ -1,12 +1,22 @@
 import React, { Component } from 'react';
 
 class Counter extends React.Component {
-    render() { 
-        return (<div>
-            <h1>Hello World</h1>
-            <button>Increment</button>
+ 
+        //add property to amke it dynamic
+        state = {
+            count = 0
+        };
+
+        render() { 
+            return (
+             <div>
+                <span>{this.state.count}</span>
+
+                <button>Increment</button>
             </div>
-        );
+        ); 
+                //within bracket is dyanmic
+                //this = current object
     }
 }
  
